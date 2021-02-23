@@ -1,9 +1,14 @@
 package fr.kdefombelle.service;
 
-public class Result {
-  private int value;
-  private String requester;
+import io.swagger.v3.oas.annotations.media.Schema;
 
+@Schema(name="MyResult", description="Pet description")
+public class Result {
+
+  @Schema(required = true, description = "The value")
+  private int value;
+
+  @Schema(description="Value", maxLength=20)
   public int getValue() {
     return value;
   }
@@ -12,11 +17,4 @@ public class Result {
     this.value = value;
   }
 
-  public String getRequester() {
-    return requester;
-  }
-
-  public void setRequester(String requester) {
-    this.requester = requester;
-  }
 }

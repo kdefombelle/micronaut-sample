@@ -15,30 +15,34 @@ public class ServiceController {
 
   private final Logger logger = LoggerFactory.getLogger(ServiceController.class);
 
-  @Operation(summary = "Double the value provided by the requester", description = "Showcase of the creation of a webservice")
+  @Operation(
+    summary = "Double value",
+    description = "Simple webservice which doubles a value provided by the requester")
   @ApiResponse(
     responseCode = "201",
-    description = "Result object correctly created",
+    description = "Response object",
     content = @Content(mediaType = "application/json",
-      schema = @Schema(type = "Result")))
+      schema = @Schema(type = "Response")
+    )
+  )
   @ApiResponse(
     responseCode = "400",
-    description = "Result object correctly created",
-    content = @Content(mediaType = "application/json",
-      schema = @Schema(type = "Result")))
+    description = "Response object",
+    content = @Content(
+      mediaType = "application/json",
+      schema = @Schema(type = "Response")
+    )
+  )
   @Post("execute")
   @Status(HttpStatus.CREATED)
   public Single<Result> execute(@Body Request request) {
     Result result = new Result();
     result.setValue(request.getValue() * 2);
-    result.setRequester(request.getRequester());
-    logger.info("*********HHHHHHHHHHAAAAAAAAAAAAAAAAAAAAAAA****");
     return Single.just(result);
   }
 
   @Get("{name}")
   public String hello(String name) {
-    logger.info("*********HHHHHHHHBBBBBBBBBBBBBBBB****");
     return "Hello " + name;
   }
 

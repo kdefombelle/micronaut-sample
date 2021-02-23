@@ -20,7 +20,6 @@ public class ServiceControllerSpec {
     request.setRequester("kdefombelle");
     request.setValue(1);
     Result result = client.execute(request).blockingGet();
-    assertEquals(request.getRequester(), result.getRequester());
     assertTrue(request.getValue() * 2 == result.getValue());
   }
 
