@@ -1,6 +1,6 @@
 micronaut:
   application:
-    name: service
+    name: sample
   router:
     static-resources:
       swagger:

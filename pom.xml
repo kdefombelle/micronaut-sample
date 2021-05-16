@@ -124,8 +124,8 @@
                         </path>
                     </annotationProcessorPaths>
                     <compilerArgs>
-                        <arg>-Amicronaut.processing.group=fr.kdefombelle.app</arg>
-                        <arg>-Amicronaut.processing.module=app-service</arg>
+                        <arg>-Amicronaut.processing.group=fr.kdefombelle</arg>
+                        <arg>-Amicronaut.processing.module=sample</arg>
                     </compilerArgs>
                 </configuration>
             </plugin>
