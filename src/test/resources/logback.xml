@@ -9,7 +9,7 @@
         </encoder>
     </appender>
 
-    <logger name="io.micronaut.http.client" level="trace"/>
+    <logger name="io.micronaut.http.client" level="INFO"/>
 
     <logger name="fr.kdefombelle" level="DEBUG"/>
 
