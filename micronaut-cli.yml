@@ -1,5 +1,5 @@
 applicationType: default
-defaultPackage: f.kdefombelle.app
+defaultPackage: fr.kdefombelle.app
 testFramework: junit
 sourceLanguage: java
 buildTool: maven

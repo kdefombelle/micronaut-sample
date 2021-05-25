@@ -1,7 +1,10 @@
 package fr.kdefombelle.service;
 
 import io.micronaut.http.HttpStatus;
-import io.micronaut.http.annotation.*;
+import io.micronaut.http.annotation.Body;
+import io.micronaut.http.annotation.Controller;
+import io.micronaut.http.annotation.Post;
+import io.micronaut.http.annotation.Status;
 import io.reactivex.Single;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -41,9 +44,9 @@ public class ServiceController {
     return Single.just(result);
   }
 
-  @Get("{name}")
-  public String hello(String name) {
-    return "Hello " + name;
-  }
+  //  @Get("{name}")
+  //  public String hello(String name) {
+  //    return "Hello " + name;
+  //  }
 
 }

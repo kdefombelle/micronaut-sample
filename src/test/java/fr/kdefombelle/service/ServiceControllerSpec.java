@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @MicronautTest
@@ -23,10 +22,10 @@ public class ServiceControllerSpec {
     assertTrue(request.getValue() * 2 == result.getValue());
   }
 
-  @Test
-  void testTest() {
-    String response = client.hello("kdefombelle");
-    assertEquals("Hello kdefombelle", response);
-  }
+  //  @Test
+  //  void testTest() {
+  //    String response = client.hello("kdefombelle");
+  //    assertEquals("Hello kdefombelle", response);
+  //  }
 
 }

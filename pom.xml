@@ -20,7 +20,7 @@
         <micronaut.version>2.3.1</micronaut.version>
         <exec.mainClass>fr.kdefombelle.Application</exec.mainClass>
         <micronaut.runtime>netty</micronaut.runtime>
-        <micronaut.openapi.version>2.3.1</micronaut.openapi.version>
+        <micronaut.openapi.version>2.5.0</micronaut.openapi.version>
     </properties>
 
     <repositories>
@@ -117,6 +117,16 @@
                     <!-- Uncomment to enable incremental compilation -->
                     <!-- <useIncrementalCompilation>false</useIncrementalCompilation> -->
                     <annotationProcessorPaths combine.children="append">
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </path>
+                        <path>
+                            <groupId>io.micronaut</groupId>
+                            <artifactId>micronaut-inject-java</artifactId>
+                            <version>${micronaut.version}</version>
+                        </path>
                         <path>
                             <groupId>io.micronaut.openapi</groupId>
                             <artifactId>micronaut-openapi</artifactId>

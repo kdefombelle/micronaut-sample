@@ -1,15 +1,11 @@
 package fr.kdefombelle;
 
 import io.micronaut.runtime.Micronaut;
-import io.swagger.v3.oas.annotations.ExternalDocumentation;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Contact;
 import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.info.License;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.servers.Server;
-import io.swagger.v3.oas.annotations.servers.ServerVariable;
-import io.swagger.v3.oas.annotations.tags.Tag;
 
 @OpenAPIDefinition(
   info = @Info(
@@ -31,4 +27,5 @@ public class Application {
   public static void main(String[] args) {
     Micronaut.run(Application.class, args);
   }
+  
 }
