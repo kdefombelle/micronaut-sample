@@ -8,7 +8,7 @@ import javax.inject.Inject;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @MicronautTest
-public class ServiceControllerSpec {
+public class ServiceControllerTest {
 
   @Inject
   private ServiceClient client;
