@@ -6,11 +6,24 @@
     <artifactId>micronaut-template</artifactId>
     <version>0.1</version>
     <packaging>${packaging}</packaging>
+    
     <parent>
         <groupId>io.micronaut</groupId>
         <artifactId>micronaut-parent</artifactId>
         <version>2.5.4</version>
     </parent>
+
+    <distributionManagement>
+        <repository>
+            <id>maven-intapac-release</id>
+            <url>http://int-repo-apac:10001/repository/maven-intapac-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-intapac-snapshot</id>
+            <url>http://int-repo-apac:10001/repository/maven-intapac-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <properties>
         <packaging>jar</packaging>
         <jdk.version>8</jdk.version>
@@ -19,6 +32,7 @@
         <micronaut.runtime>netty</micronaut.runtime>
         <argLine></argLine> <!-- for jacoco -->
     </properties>
+
     <repositories>
         <repository>
             <id>central</id>
