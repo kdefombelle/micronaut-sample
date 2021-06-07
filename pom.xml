@@ -13,8 +13,8 @@
     </parent>
     <properties>
         <packaging>jar</packaging>
-        <jdk.version>11</jdk.version>
-        <release.version>11</release.version>
+        <jdk.version>8</jdk.version>
+        <release.version>8</release.version>
         <exec.mainClass>fr.kdefombelle.Application</exec.mainClass>
         <micronaut.runtime>netty</micronaut.runtime>
         <argLine></argLine> <!-- for jacoco -->
