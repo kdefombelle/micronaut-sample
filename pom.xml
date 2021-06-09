@@ -6,7 +6,7 @@
     <artifactId>micronaut-template</artifactId>
     <version>0.1</version>
     <packaging>${packaging}</packaging>
-    
+
     <parent>
         <groupId>io.micronaut</groupId>
         <artifactId>micronaut-parent</artifactId>
@@ -148,7 +148,6 @@
                     </execution>
                     <!-- bound to phase verify by default -->
                     <execution>
-                        <phase>package</phase>
                         <id>jacoco-site</id>
                         <!-- not used by default but callable for local analysis -->
                         <goals>
