@@ -40,7 +40,7 @@ pipeline {
                     //https://stackoverflow.com/questions/6308162/maven-the-packaging-for-this-project-did-not-assign-a-file-to-the-build-artifac
                     //calling jar:jar before deploy:deploy sets some info in context to enable deploy:deploy to work (but does not recreate the jar)
                     //quicker than simply -Dmaven.test.skip=true
-                    sh 'mvn -B -s $MAVEN_SETTINGS_XML jar:jar deploy:deploy'
+                    sh 'mvn -B -s $MAVEN_SETTINGS_XML jar:jar deploy:deploy -DaltDeploymentRepository=maven-intapac-snapshot::default::http://int-repo-apac:10001/repository/maven-intapac-release/'
                 }
             }
         }

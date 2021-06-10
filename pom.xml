@@ -13,17 +13,6 @@
         <version>2.5.4</version>
     </parent>
 
-    <distributionManagement>
-        <repository>
-            <id>maven-intapac-release</id>
-            <url>http://int-repo-apac:10001/repository/maven-intapac-release/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-intapac-snapshot</id>
-            <url>http://int-repo-apac:10001/repository/maven-intapac-snapshot/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <properties>
         <packaging>jar</packaging>
         <jdk.version>8</jdk.version>
