@@ -15,13 +15,13 @@
 
     <distributionManagement>
         <repository>
-            <id>maven-intapac-release</id>
-            <url>http://int-repo-apac:10001/repository/maven-intapac-release/</url>
+            <id>maven-organisation-release</id>
+            <url>http://organisation.com/repository/maven-intapac-release/</url>
         </repository>
         <snapshotRepository>
-            <id>maven-intapac-snapshot</id>
-            <url>http://int-repo-apac:10001/repository/maven-intapac-snapshot/</url>
-        </snapshotRepository>
+            <id>maven-organisation-snapshot</id>
+            <url>http://organisation.com/repository/maven-intapac-snapshot/</url>
+        </snapshotRepository> 
     </distributionManagement>
 
     <properties>
